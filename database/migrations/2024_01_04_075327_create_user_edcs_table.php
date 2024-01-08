@@ -17,8 +17,8 @@ class CreateUserEdcsTable extends Migration
             $table->id();
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('email')->unique();
-            $table->string('mobile')->unique();
+            $table->string('email');
+            $table->string('mobile');
             $table->string('password');
             $table->bigInteger('pro_start_timestamp')->nullable();
             $table->bigInteger('pro_end_timestamp')->nullable();

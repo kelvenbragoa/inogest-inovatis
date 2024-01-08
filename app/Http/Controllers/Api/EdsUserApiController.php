@@ -48,6 +48,8 @@ class EdsUserApiController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+     
         public function recover($phone, $code){
         /*$reference = EdcUserApi::orderBy('id','desc')->first();
         $string = substr(str_shuffle(str_repeat($x='0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZ', ceil(3/strlen($x)) )),1,3);

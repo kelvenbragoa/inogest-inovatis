@@ -21,10 +21,25 @@
 
 
 
+        <div class="col-lg-12 mb-2" id="faq">
+           
+
+                    @if (Session::has('messageSuccess'))
+                        <div class="alert alert-success">
+                            {{Session::get('messageSuccess')}}
+                        </div>
+                    @endif
+
+                    @if (Session::has('messageError'))
+                        <div class="alert alert-danger">
+                            {{Session::get('messageError')}}
+                        </div>
+                    @endif
+           
+        </div>
 
 
-
-
+       
 
 
 
@@ -35,7 +50,8 @@
         
         <div class="col-lg-12 mb-2" id="faq">
             <h4 class="nomargin_top">Exclusão permanente da conta</h4>
-            <div class='card'>
+           
+            
                 
                 <div class='card-body'>
                     
@@ -79,14 +95,14 @@
                         <div class="row">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="inputEmail4">Nome:</label>
-                                <input type="text" class="form-control"  placeholder="Nome"  name="firstname" required>
+                                <input type="text" class="form-control"  placeholder="Nome"  name="first_name" required>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="inputEmail4">Apelido:</label>
-                                <input type="text" class="form-control"  placeholder="Apelido"  name="lastname" required>
+                                <input type="text" class="form-control"  placeholder="Apelido"  name="last_name" required>
                             </div>
                         </div>
 
@@ -100,14 +116,21 @@
                         <div class="row">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="inputEmail4">Telefone:</label>
-                                <input type="text" class="form-control"  placeholder="Telefone"  name="moblile" required>
+                                <input type="text" class="form-control"  placeholder="Telefone"  name="mobile" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="mb-3 col-md-6">
+                                <label class="form-label" for="inputEmail4">Password:</label>
+                                <input type="password" class="form-control"  placeholder="Password"  name="password" required>
                             </div>
                         </div>
 
                         <div class="row">
                             <div class="mb-3 col-md-6">
                                 <label class="form-label" for="inputEmail4">Informação adicional:</label>
-                                <textarea type="text" class="form-control"  placeholder="Informação adicional"  name="info" required></textarea>
+                                <textarea type="text" class="form-control"  placeholder="Informação adicional"  name="info"></textarea>
                             </div>
                         </div>
 

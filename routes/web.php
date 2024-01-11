@@ -20,6 +20,12 @@ Route::get('/', function () {
 
 Auth::routes();
 Route::get('/delete-my-data',[\App\Http\Controllers\PrivacyController::class,'index']);
+Route::post('/request-data-deletion',[\App\Http\Controllers\PrivacyController::class,'store']);
+
+
+
+
+
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('feedbackuser', 'App\Http\Controllers\FeedBackUserController');

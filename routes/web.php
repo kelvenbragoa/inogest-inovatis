@@ -19,6 +19,7 @@ Route::get('/', function () {
 });
 
 Auth::routes();
+Route::get('/delete-my-data',[\App\Http\Controllers\PrivacyController::class,'index']);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::resource('feedbackuser', 'App\Http\Controllers\FeedBackUserController');
@@ -57,6 +58,9 @@ Route::resource('customer', 'App\Http\Controllers\CustomerController');
     Route::get('/search',[\App\Http\Controllers\EdcUserController::class,'search']);
     Route::get('/searchonline',[\App\Http\Controllers\EdcUserOnlineController::class,'search']);
     Route::get('/searchonlineeds',[\App\Http\Controllers\EdsUserOnlineController::class,'search']);
+    
+
+    
 
  //INOGEST ATAS
     Route::get('/inogest-atas',[\App\Http\Controllers\AtasController::class,'index']);

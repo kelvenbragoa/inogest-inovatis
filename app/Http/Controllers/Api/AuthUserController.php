@@ -28,7 +28,9 @@ class AuthUserController extends Controller
         }
 
         return response( 
-            ['user'=>$user],200
+            [
+                'user'=>$user
+            ],200
         );
    
     }

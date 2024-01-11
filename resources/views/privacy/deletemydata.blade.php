@@ -46,7 +46,7 @@
 
 
 
-    
+        <img src="{{asset('template2/images/edc-light.png')}}" alt="INOVATIS MZ" height="100px" width="100px">
         
         <div class="col-lg-12 mb-2" id="faq">
             <h4 class="nomargin_top">Exclusão permanente da conta</h4>

@@ -50,6 +50,9 @@
                                     <div id="site-logo" class="site-logo">
                                         <a href="inicio">
                                             <img src="{{asset('template2/images/logo1.png')}}" alt="INOVATIS MZ" class="">
+                                            
+
+                                            
                                         </a>
                                     </div>
                                 </div>

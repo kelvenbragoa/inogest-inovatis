@@ -17,7 +17,7 @@ class UsersEdcController extends Controller
     {
         //
         App::setLocale(auth()->user()->lang);
-        $usersedc = UserEdc::paginate(100);
+        $usersedc = UserEdc::paginate(1000);
         return view('admin.usersedc.index',compact('usersedc'));
     }
 

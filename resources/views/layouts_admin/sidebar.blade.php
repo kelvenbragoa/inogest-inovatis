@@ -171,6 +171,12 @@
                   
                 </ul>
             </li>
+
+            <li class="sidebar-item">
+                <a class="sidebar-link" href="{{route('usersedc.index')}}">
+                <i class="align-middle" data-feather="user"></i> <span class="align-middle">Usuários EDC</span>
+                </a>
+            </li>
             
             <li class="sidebar-item">
                 <a class="sidebar-link" href="{{route('feedbackuser.index')}}">

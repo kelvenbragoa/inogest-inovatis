@@ -46,6 +46,7 @@ Route::resource('customer', 'App\Http\Controllers\CustomerController');
     Route::resource('notifications', 'App\Http\Controllers\NotificationsController');
     Route::resource('profile', 'App\Http\Controllers\ProfilesController');
     Route::resource('helpcenter', 'App\Http\Controllers\HelpCenterController');
+    Route::resource('usersedc', 'App\Http\Controllers\UsersEdcController');
     Route::resource('config', 'App\Http\Controllers\ConfigController');
     Route::resource('category', 'App\Http\Controllers\CategoryController');
     Route::resource('process_salary', 'App\Http\Controllers\ProcessSalary');

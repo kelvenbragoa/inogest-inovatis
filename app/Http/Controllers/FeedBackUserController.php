@@ -17,7 +17,7 @@ class FeedBackUserController extends Controller
     {
         //
         App::setLocale(auth()->user()->lang);
-        $feedback = FeedBackUser::get();
+        $feedback = FeedBackUser::orderBy('id','desc')->get();
         return view('admin.feedback.index',compact('feedback'));
     }
 

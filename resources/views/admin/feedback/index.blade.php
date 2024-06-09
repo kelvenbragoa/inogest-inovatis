@@ -32,11 +32,12 @@
                         <thead>
                             <tr>
                                 <th style="width:15%;">Registado por</th>
-                                <th style="width:25%;">Nome usuário</th>
-                                <th style="width:25%;">Provincia</th>
+                                <th style="width:20%;">Nome usuário</th>
+                                <th style="width:10%;">Provincia</th>
                                 <th style="width:10%;">Nível satisfação</th>
                                 <th style="width:15%;">Telefone Instrutor</th>
                                 <th style="width:40%;">Sugestões</th>
+                                <th style="width:20%;">Data</th>
                                 <th>{{__('text.action')}}</th>
                             </tr>
                         </thead>
@@ -61,6 +62,8 @@
                                     @endswitch</td>
                                     <td>{{$item->instructor_phone}}</td>
                                     <td>{{$item->suggest}}</td>
+                                    <td>{{$item->created_at->format('d-m-Y H:i')}}</td>
+
                                     <td class="table-action">
                                          <a href="{{URL::to('/feedbackuser/'.$item->id.'/edit')}}"><i class="align-middle" data-feather="edit-2"></i></a> 
                                         <a href="" data-toggle="modal" data-target="#exampleModalCenter{{$item->id}}"><i class="align-middle" data-feather="trash"></i></a>

@@ -183,7 +183,7 @@
                 <i class="align-middle" data-feather="archive"></i> <span class="align-middle">Estatisticas Usuário</span>
                 </a>
             </li>
-
+{{-- 
             <li class="sidebar-header">
                 InoSecure
             </li>
@@ -232,7 +232,7 @@
                    
                   
                 </ul>
-            </li>
+            </li> --}}
             
              <li class="sidebar-header">
                 InoGest Atas

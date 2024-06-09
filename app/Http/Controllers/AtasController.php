@@ -11,7 +11,7 @@ class AtasController extends Controller
 
     public function index(){
 
-        $data = Http::get('https://inogest-atas.inovatis.co.mz/api/dashboard')->json();
+        $data = Http::get('http://atas.inogest.co.mz/api/dashboard')->json();
 
        
         return view('admin.atas.index',['data'=>$data]);
@@ -19,7 +19,7 @@ class AtasController extends Controller
 
     public function invoice(){
 
-        $data = Http::get('https://inogest-atas.inovatis.co.mz/api/invoice')->json();
+        $data = Http::get('http://atas.inogest.co.mz/api/invoice')->json();
 
         //circulationin
 
@@ -28,7 +28,7 @@ class AtasController extends Controller
 
     public function organizacao(){
 
-        $data = Http::get('https://inogest-atas.inovatis.co.mz/api/organization')->json();
+        $data = Http::get('http://atas.inogest.co.mz/api/organization')->json();
 
         //circulationin
 

@@ -164,8 +164,8 @@
 				<tr class="item">
 					<td>{{$item->name}}</td>
 					<td>{{$item->quatity}}</td>
-					<td>{{$item->price}}</td>
-					<td>{{$item->price * $item->quatity}}</td>
+					<td>{{number_format($item->price,2)}}</td>
+					<td>{{number_format($item->price * $item->quatity,2)}}</td>
 				</tr>
 				<?php $sum_total =$sum_total + ($item->price * $item->quatity) ?>
 				@endforeach
@@ -179,18 +179,18 @@
 				<tr class="total">
 					
 
-					<td colspan="4">Total (Sem IVA incluído): {{$sum_total}}MT</td>
+					<td colspan="4">Total (Sem IVA incluído): {{number_format($sum_total,2)}}MT</td>
 				</tr>
 				<tr class="total">
 					
 
-					<td colspan="4">IVA({{$config->company_tax}}%): {{$sum_total*($config->company_tax/100)}}MT</td>
+					<td colspan="4">IVA({{$config->company_tax}}%): {{number_format($sum_total*($config->company_tax/100),2)}}MT</td>
 				</tr>
 
 				<tr class="total">
 					
 
-					<td colspan="4">Total(Com IVA incluído): {{$sum_total+($sum_total*($config->company_tax/100))}}MT</td>
+					<td colspan="4">Total(Com IVA incluído): {{number_format($sum_total+($sum_total*($config->company_tax/100)),2)}}MT</td>
 				</tr>
 				<tr class="total">
 					
@@ -209,13 +209,13 @@
 						<td colspan="4">Metodos de Pagamento</td>
 					</tr>
 					
-				<tr class="item">
+				{{-- <tr class="item">
 					<td>{{$config->company_bank_name1}}</td>
 					<td></td>
 					<td></td>
 					<td>{{$config->company_bank_account1}}</td>
 					
-				</tr>
+				</tr> --}}
 				<tr class="item">
 					<td>{{$config->company_bank_name2}}</td>
 					<td></td>
